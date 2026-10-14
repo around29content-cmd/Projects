@@ -1,0 +1,46 @@
+record_id,business_name_std,primary_industry,Industry Google Ads Fit,Search Intent,Commercial Intent,Customer Value Potential,Conversion Potential,Geographic Targeting,Urgency,Business Scalability,Digital Readiness,Data Completeness,total_score,tier,rank,low_confidence_factors,overall_confidence,key_strengths,key_weaknesses
+P-01,AA Roofing and Decking,Home Services,15,13.5,12.0,15,10,10,4,3,4,4,90.5,Tier 1 - Immediate Opportunity,3,0,High,Top-tier home-services vertical; very high job value; urgent demand,Highly competitive category; no email on file; single-crew capacity
+P-02,Affordable Junk Removal,Home Services,15,13.5,13.5,8,10,9,4,5,4,5,87.0,Tier 1 - Immediate Opportunity,5,0,High,Very high intent and same-day urgency; regional footprint; business accounts,Mid-ticket jobs; free-mail contact; heavy franchise competition
+P-03,Alignments Northwest LLC,Automotive (services),12,9.0,10.5,12,10,10,3,3,4,5,78.5,Tier 2 - Strong Prospect,12,0,High,Niche B2B service with little competition; fleet repeat work,Low search volume; small team
+P-04,American Tree Excavation,Home Services,15,12.0,12.0,12,10,6,4,3,3,3,80.0,Tier 2 - Strong Prospect,10,0,High,"High-ticket, urgent tree work in a strong vertical",Service area not stated on the site; no email; competitive
+P-05,Around Cricket,Retail (ecommerce),8,10.5,9.0,8,9,2,1,3,5,3,58.5,Tier 3 - Research/Nurture,27,0,High,Working online store; verified product demand,Outside the US market; invalid phone on file; retail margins
+P-06,ASL Camguard,Automotive (products),9,9.0,9.0,8,9,6,1,4,5,4,64.0,Tier 3 - Research/Nurture,23,0,High,National product brand with an online store; repeat consumable,Marketplace competition; modest unit value; product feed needed
+P-07,Axle Surgeons of Seattle,Automotive (services),12,10.5,13.5,12,10,9,5,3,4,5,84.0,Tier 2 - Strong Prospect,8,0,High,Emergency B2B demand; call-driven; low competition,Low volume; free-mail contact
+P-08,Brothers Micro Market,Unknown,3,3,3,3,2,2,1,1,1,3,22,Tier 4 - Low Priority,43,8,Low,Valid phone and a named contact email,Website offline; business type unknown
+P-09,Calvary Cemetery,Other: cemetery,8,9.0,9.0,12,7,10,3,4,4,5,71.0,Tier 2 - Strong Prospect,17,0,High,High-value services; established Tulsa institution; complete contact data,Sensitive category; mixed urgency; possibly a nonprofit
+P-10,Chili On The Green,Other: community event,3,4.5,6.0,4,3,9,1,1,3,2,36.5,Tier 4 - Low Priority,37,0,High,Verified Oklahoma-wide event brand,"Seasonal, low value; no phone or email; run by Kiwanis"
+P-11,Clean and Clean by Cliff,Home Services,15,10.5,10.5,8,10,6,3,3,3,2,71.0,Tier 2 - Strong Prospect,17,0,High,Clear local service intent; recurring work,Low ticket; location not stated; name differs from the site
+P-12,Cunning Dental Group,Dental,15,13.5,12.0,15,10,9,4,5,5,3,91.5,Tier 1 - Immediate Opportunity,2,0,High,Very high case value; emergency and implant demand; 56-year practice; online scheduling,No email on file; very competitive; duplicate pair to resolve
+P-13,Cunningsmiles Implant Experts,Dental,15,12.0,12.0,15,7,2,3,1,1,0,68.0,Tier 3 - Research/Nurture,21,6,Low,Implant dentistry is a high-value vertical,Site blocked; no contact data; likely duplicate of P-12
+P-14,DBSA OK,Healthcare (nonprofit support),4,9.0,3.0,1,3,9,4,1,4,5,43.0,Tier 4 - Low Priority,36,0,High,Complete contact data; statewide reach,No commercial conversion; nonprofit
+P-15,Kiwanis Club of Tulsa,Other: service club,1,4.5,3.0,1,3,10,1,1,3,4,31.5,Tier 4 - Low Priority,40,0,High,Verified Tulsa presence; valid phone,No commercial conversion; membership organisation
+P-16,La Jolla Grooming Co,Other: pet services,11,12.0,12.0,8,9,9,3,2,5,4,75.0,Tier 2 - Strong Prospect,16,0,High,Direct booking intent; affluent area; online booking,Capacity-limited; moderate ticket; no email on file
+P-17,Lab Rescue,Other: animal welfare nonprofit,2,7.5,4.5,1,3,9,1,1,3,2,34.0,Tier 4 - Low Priority,38,0,High,Clear mission and regional reach,No commercial conversion; no phone or email
+P-18,Next Level Prospect,Education,10,7.5,6.0,4,7,6,1,1,2,3,47.5,Tier 4 - Low Priority,35,0,High,Valid phone; nationwide scope,Nonprofit with unclear revenue; research-stage demand; site in progress
+P-19,NorthWest Eco Clean,Home Services,15,9.0,10.5,8,9,9,1,5,5,4,75.5,Tier 2 - Strong Prospect,15,0,High,Recurring plans; regional King County footprint; existing social advertising,Small ticket; young category
+P-20,Occasions Paper,Retail,8,7.5,7.5,8,6,10,1,2,4,4,58.0,Tier 3 - Research/Nurture,28,0,High,Verified Norman location; dealer brand,No online sales; low urgency; browse-heavy demand
+P-21,Ocean View Lodging,Hospitality,12,13.5,12.0,12,9,6,3,2,5,4,78.5,Tier 2 - Strong Prospect,12,0,High,Constant destination demand; online booking,OTA competition; fixed room capacity
+P-22,Orion Opticals,Medical,14,12.0,10.5,12,10,10,3,4,5,5,85.5,Tier 1 - Immediate Opportunity,6,0,High,High lifetime value; online booking; complete location data,Chain competition; contact email belongs to a third party
+P-23,Ornamental Grasses,Retail,8,7.5,6.0,4,6,10,1,2,3,4,51.5,Tier 3 - Research/Nurture,33,0,High,Verified Olympia location,"Unclear retail model; small, seasonal demand"
+P-24,Pinpoint Resource,Retail,8,7.5,9.0,8,6,10,3,2,4,4,61.5,Tier 3 - Research/Nurture,24,0,High,Verified store; wedding deadlines create intent,National brands own generic terms; no online sales
+P-25,Prime Care Dental Indy,Dental,15,13.5,12.0,15,10,10,4,5,4,4,92.5,Tier 1 - Immediate Opportunity,1,0,High,Two locations; very high case value; emergency demand,No email on file; very competitive
+P-26,Rosewood Parke,Other: community association,0,1.5,0.0,1,0,9,1,1,2,2,17.5,Tier 4 - Low Priority,45,0,High,None,Not a business
+P-27,Superior Coatings NW,Home Services,15,12.0,12.0,12,10,9,3,4,4,4,85.0,Tier 1 - Immediate Opportunity,7,0,High,High-ticket painting; regional service area; commercial work,Seasonal; competitive; no email on file
+P-28,Tag OK,Other: animal welfare nonprofit,2,4.5,3.0,1,3,9,1,1,3,2,29.5,Tier 4 - Low Priority,41,0,High,Regional program,No commercial conversion; no phone or email
+P-29,The Bartan Company,Other: event services,6,7.5,7.5,8,7,2,1,3,3,4,49.0,Tier 4 - Low Priority,34,0,High,Verified Hyderabad presence; quote-driven,Outside the US market; niche demand
+P-30,Top Dollar Pawn and Check Cashing,Financial Services (pawn),8,10.5,10.5,8,6,10,4,3,3,4,67.0,Tier 3 - Research/Nurture,22,0,High,Strong local intent; immediate cash needs,Policy limits on firearms and loans; modest margins
+P-31,Trans Landscaping,Home Services,15,12.0,10.5,12,10,9,3,4,4,4,83.5,Tier 2 - Strong Prospect,9,0,High,High-ticket installs; service towns listed; 20+ years in business,Seasonal; competitive; no email on file
+P-32,VIP Pest Solutions,Home Services,15,13.5,13.5,12,10,9,4,5,4,2,88.0,Tier 1 - Immediate Opportunity,4,0,High,Top vertical; recurring contracts; three-county region,Phone on file mistyped; no email; very competitive
+P-33,Wheeler Sonoma Printing,B2B Services,9,9.0,9.0,12,7,9,3,4,4,4,70.0,Tier 2 - Strong Prospect,20,0,High,Repeat B2B orders; established client industries,Online printers dominate generic terms
+P-34,Will Rogers Stage Foundation,Other: performing arts,5,7.5,9.0,8,5,10,3,1,5,4,57.5,Tier 3 - Research/Nurture,30,0,High,Online ticketing; verified Tulsa venue,"Seasonal, small budgets; nonprofit"
+P-35,Workhub Tulsa,Real Estate (coworking),11,10.5,10.5,12,10,10,3,4,4,4,79.0,Tier 2 - Strong Prospect,11,0,High,Membership value; clear local intent,Limited market size
+P-36,Zellersins,Insurance,13,10.5,10.5,15,10,6,3,4,3,2,77.0,Tier 2 - Strong Prospect,14,0,High,Very high lifetime value; clear quote intent,Expensive keywords; location and lines of business unverified; name differs from the site
+I-01,Around29 Center for Enriched Studies,Education,10,10.5,10.5,15,10,2,3,4,5,1,71.0,Tier 2 - Strong Prospect,17,1,High,High tuition value; visit bookings,Location unknown; phone unusable; internal property
+I-02,Around29 Digital Media Solutions,Professional Services,8,10.5,9.0,12,7,6,1,4,1,3,61.5,Tier 3 - Research/Nurture,24,0,High,High project value,Crowded agency keywords; site in progress; it is the Partner itself
+I-03,Search29,Unknown,3,3,3,3,2,2,1,1,0,1,19,Tier 4 - Low Priority,44,8,Low,None,"No website, phone or email"
+I-04,Send29,Technology (software),8,10.5,9.0,8,9,5,1,5,1,1,57.5,Tier 3 - Research/Nurture,30,0,High,Scalable self-serve product,Low revenue per customer against expensive keywords; site in progress
+I-05,Lead You,Technology (software),8,10.5,9.0,12,7,5,1,5,2,1,60.5,Tier 3 - Research/Nurture,26,0,High,Scalable B2B software,Crowded expensive category; no contact data
+I-06,Around29 themes,Technology (digital products),5,7.5,7.5,4,2,2,1,3,2,0,34.0,Tier 4 - Low Priority,38,5,Low,Scalable digital product,Minimal site content; low price point; marketplace competition
+I-07,Around29.us,Professional Services,8,10.5,9.0,12,7,2,1,4,3,1,57.5,Tier 3 - Research/Nurture,30,1,High,Clear service description,Duplicate agency site; no contact data; crowded keywords
+I-08,Starling Education,Education,10,3,3,3,2,2,1,1,1,2,28,Tier 4 - Low Priority,42,8,Low,Valid phone,Site unreachable; possible duplicate of I-09
+I-09,Starling Wonder Kids,Education,10,10.5,10.5,15,2,2,3,3,2,0,58.0,Tier 3 - Research/Nurture,28,2,Medium,High tuition value category,Location unknown; phone unusable; possible duplicate of I-08

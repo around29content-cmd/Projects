@@ -1,0 +1,109 @@
+Factor,Weight,Source of the rating,How points are awarded
+Industry Google Ads Fit,15,CLASSIFICATION primary_industry mapped to an industry label,Rating label looked up in the rubric below; Unknown ratings score conservatively and are flagged Low confidence
+Search Intent,15,GOOGLE_ADS_FIT search_intent_0_10,Rating label looked up in the rubric below; Unknown ratings score conservatively and are flagged Low confidence
+Commercial Intent,15,GOOGLE_ADS_FIT commercial_intent_0_10,Rating label looked up in the rubric below; Unknown ratings score conservatively and are flagged Low confidence
+Customer Value Potential,15,GOOGLE_ADS_FIT customer_value_potential,Rating label looked up in the rubric below; Unknown ratings score conservatively and are flagged Low confidence
+Conversion Potential,10,GOOGLE_ADS_FIT conversion_actions and verified site conversion path,Rating label looked up in the rubric below; Unknown ratings score conservatively and are flagged Low confidence
+Geographic Targeting,10,CLASSIFICATION geographic_scope and geographic_basis,Rating label looked up in the rubric below; Unknown ratings score conservatively and are flagged Low confidence
+Urgency,5,GOOGLE_ADS_FIT urgency,Rating label looked up in the rubric below; Unknown ratings score conservatively and are flagged Low confidence
+Business Scalability,5,"Judgement from business model, scope and locations on the site",Rating label looked up in the rubric below; Unknown ratings score conservatively and are flagged Low confidence
+Digital Readiness,5,Website status and conversion path observed 8 Oct 2026,Rating label looked up in the rubric below; Unknown ratings score conservatively and are flagged Low confidence
+Data Completeness,5,"CLEANED_DATA contactability: phone (2), email (1), verified location (1), clean identity (1)",Rating label looked up in the rubric below; Unknown ratings score conservatively and are flagged Low confidence
+TOTAL,100,,"Sum of the ten factor points; tiers: 85-100 Tier 1 Immediate Opportunity, 70-84 Tier 2 Strong Prospect, 50-69 Tier 3 Research/Nurture, 0-49 Tier 4 Low Priority"
+,,,
+rubric_key (factor|rating),points,rating,description
+Industry Google Ads Fit|Home Services,15,Home Services,"Local service categories with urgent, high-ticket, call-driven demand"
+Industry Google Ads Fit|Dental,15,Dental,"Appointment-driven, very high case value, constant local search demand"
+Industry Google Ads Fit|Medical,14,Medical,Appointment-driven local healthcare with repeat visits
+Industry Google Ads Fit|Insurance,13,Insurance,Quote-driven with very high lifetime value; costly keywords
+Industry Google Ads Fit|Automotive (services),12,Automotive (services),Repair and maintenance searches with clear intent
+Industry Google Ads Fit|Hospitality,12,Hospitality,Booking-driven destination demand; OTA competition
+Industry Google Ads Fit|Real Estate (coworking),11,Real Estate (coworking),Membership and lease value with steady local search
+Industry Google Ads Fit|Other: pet services,11,Other: pet services,Booking-driven local service with repeat visits
+Industry Google Ads Fit|Education,10,Education,Enrolment-driven with high tuition value; seasonal
+Industry Google Ads Fit|Automotive (products),9,Automotive (products),Product brand sold online; marketplace competition
+Industry Google Ads Fit|B2B Services,9,B2B Services,Quote-driven business demand; online competitors on generic terms
+Industry Google Ads Fit|Financial Services (pawn),8,Financial Services (pawn),Strong local intent but policy limits on loans and firearms
+Industry Google Ads Fit|Professional Services,8,Professional Services,"Research-heavy agency buying; crowded, expensive terms"
+Industry Google Ads Fit|Retail,8,Retail,"Store-visit or product demand; browse-heavy, margins modest"
+Industry Google Ads Fit|Retail (ecommerce),8,Retail (ecommerce),Product searches convert online; marketplace competition
+Industry Google Ads Fit|Technology (software),8,Technology (software),Scalable but very expensive software keywords
+Industry Google Ads Fit|Other: cemetery,8,Other: cemetery,"High-value, sensitive, mixed urgency"
+Industry Google Ads Fit|Other: event services,6,Other: event services,Niche quote-driven demand
+Industry Google Ads Fit|Other: performing arts,5,Other: performing arts,"Seasonal ticket sales, small budgets"
+Industry Google Ads Fit|Technology (digital products),5,Technology (digital products),Low-priced products against marketplaces
+Industry Google Ads Fit|Healthcare (nonprofit support),4,Healthcare (nonprofit support),Help-seeking searches without a commercial transaction
+Industry Google Ads Fit|Other: community event,3,Other: community event,"Annual event, low value"
+Industry Google Ads Fit|Unknown,3,Unknown,Industry not established; conservative
+Industry Google Ads Fit|Other: animal welfare nonprofit,2,Other: animal welfare nonprofit,"Donation and adoption driven, no sale"
+Industry Google Ads Fit|Other: service club,1,Other: service club,"Membership organisation, no sale"
+Industry Google Ads Fit|Other: community association,0,Other: community association,Not a business
+Search Intent|0,0.0,0,Step 4 search intent 0/10 x 1.5
+Search Intent|1,1.5,1,Step 4 search intent 1/10 x 1.5
+Search Intent|2,3.0,2,Step 4 search intent 2/10 x 1.5
+Search Intent|3,4.5,3,Step 4 search intent 3/10 x 1.5
+Search Intent|4,6.0,4,Step 4 search intent 4/10 x 1.5
+Search Intent|5,7.5,5,Step 4 search intent 5/10 x 1.5
+Search Intent|6,9.0,6,Step 4 search intent 6/10 x 1.5
+Search Intent|7,10.5,7,Step 4 search intent 7/10 x 1.5
+Search Intent|8,12.0,8,Step 4 search intent 8/10 x 1.5
+Search Intent|9,13.5,9,Step 4 search intent 9/10 x 1.5
+Search Intent|10,15.0,10,Step 4 search intent 10/10 x 1.5
+Search Intent|Unknown,3,Unknown,No evidence; conservative
+Commercial Intent|0,0.0,0,Step 4 commercial intent 0/10 x 1.5
+Commercial Intent|1,1.5,1,Step 4 commercial intent 1/10 x 1.5
+Commercial Intent|2,3.0,2,Step 4 commercial intent 2/10 x 1.5
+Commercial Intent|3,4.5,3,Step 4 commercial intent 3/10 x 1.5
+Commercial Intent|4,6.0,4,Step 4 commercial intent 4/10 x 1.5
+Commercial Intent|5,7.5,5,Step 4 commercial intent 5/10 x 1.5
+Commercial Intent|6,9.0,6,Step 4 commercial intent 6/10 x 1.5
+Commercial Intent|7,10.5,7,Step 4 commercial intent 7/10 x 1.5
+Commercial Intent|8,12.0,8,Step 4 commercial intent 8/10 x 1.5
+Commercial Intent|9,13.5,9,Step 4 commercial intent 9/10 x 1.5
+Commercial Intent|10,15.0,10,Step 4 commercial intent 10/10 x 1.5
+Commercial Intent|Unknown,3,Unknown,No evidence; conservative
+Customer Value Potential|Very High,15,Very High,Multi-thousand-dollar jobs or multi-year lifetime value
+Customer Value Potential|High,12,High,High-ticket or repeat B2B value
+Customer Value Potential|Moderate,8,Moderate,Mid-ticket or recurring small jobs
+Customer Value Potential|Low,4,Low,"Small, occasional purchases"
+Customer Value Potential|Unknown,3,Unknown,No evidence; conservative
+Customer Value Potential|Very Low,1,Very Low,Donations or dues only
+Conversion Potential|Direct response (calls plus quotes or appointments),10,Direct response (calls plus quotes or appointments),"Trackable calls, quote forms or appointment requests"
+Conversion Potential|Direct response (bookings or purchases online),9,Direct response (bookings or purchases online),"Online bookings, sign-ups or product purchases"
+Conversion Potential|Forms and consultations,7,Forms and consultations,Lead forms and consultation requests; longer sales cycle
+Conversion Potential|Store visits and calls,6,Store visits and calls,Offline conversions; harder to measure
+Conversion Potential|Ticket purchases online (seasonal),5,Ticket purchases online (seasonal),Real purchases but seasonal and low value
+"Conversion Potential|Donations, sign-ups or tickets only",3,"Donations, sign-ups or tickets only",No commercial transaction
+Conversion Potential|Unknown,2,Unknown,No evidence; conservative
+Conversion Potential|None,0,None,Nothing to convert
+"Geographic Targeting|Local, location verified",10,"Local, location verified","Single metro, location confirmed on the site"
+"Geographic Targeting|Hyperlocal, location verified",9,"Hyperlocal, location verified","Neighbourhood radius, location confirmed"
+"Geographic Targeting|Regional, service area verified",9,"Regional, service area verified",Several cities or counties confirmed on the site
+"Geographic Targeting|Local, location inferred from area code",6,"Local, location inferred from area code",Target area must be confirmed before launch
+Geographic Targeting|National,6,National,Feasible but broader and costlier
+Geographic Targeting|National (online),5,National (online),Online product with no local anchor
+Geographic Targeting|International / outside US,2,International / outside US,Outside the market this list serves
+Geographic Targeting|Unknown,2,Unknown,No location evidence; conservative
+Urgency|Emergency,5,Emergency,Immediate need
+Urgency|High,4,High,Days
+Urgency|Moderate,3,Moderate,Weeks
+Urgency|Low,1,Low,No time pressure
+Urgency|Unknown,1,Unknown,No evidence; conservative
+Business Scalability|Regional service with recurring or multi-location capacity,5,Regional service with recurring or multi-location capacity,Can absorb more leads and spend
+Business Scalability|Established practice or firm with capacity to add clients,4,Established practice or firm with capacity to add clients,Room to grow within current operation
+"Business Scalability|Small local operator, single team",3,"Small local operator, single team",Growth limited by one crew or owner
+Business Scalability|Capacity-limited single location,2,Capacity-limited single location,"Fixed chairs, rooms or stock"
+"Business Scalability|Nonprofit, event or association",1,"Nonprofit, event or association",Not built to scale paid acquisition
+Business Scalability|Unknown,1,Unknown,No evidence; conservative
+"Digital Readiness|Live site with online booking, store or scheduling",5,"Live site with online booking, store or scheduling",Conversion path already online
+"Digital Readiness|Live site with phone and contact path, service area stated",4,"Live site with phone and contact path, service area stated",Ready for call and form tracking; targeting information present
+Digital Readiness|Live site with phone and contact path,3,Live site with phone and contact path,Ready for call and form tracking
+"Digital Readiness|Live site, limited contact path",2,"Live site, limited contact path",Landing experience needs work
+Digital Readiness|Site in progress or inaccessible,1,Site in progress or inaccessible,No usable landing page today
+Digital Readiness|No website,0,No website,Nothing to send traffic to
+Data Completeness|5,5,5,"Valid phone, email, verified location and clean identity"
+Data Completeness|4,4,4,Four elements present
+Data Completeness|3,3,3,Three elements present
+Data Completeness|2,2,2,Two elements present
+Data Completeness|1,1,1,One element present
+Data Completeness|0,0,0,No usable contact data

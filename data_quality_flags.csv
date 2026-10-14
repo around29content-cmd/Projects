@@ -1,0 +1,99 @@
+record_id,business_name,source_tab,source_row,field,flag_code,severity,original_value,detail,recommended_action
+ALL,(all records),Prospects + Internal,,contact_name,CONTACT_FIELD_ABSENT,High,(no column),"No contact person, title or decision-maker column exists in the source; 45 of 45 records are Unknown","Add decision-maker name, title, direct phone and email during enrichment"
+ALL,(all records),Prospects + Internal,,city / state / country,LOCATION_FIELD_ABSENT,High,(no column),"No address, city, state or country column exists; 45 of 45 records are Unknown. Phone area codes are shown only as hints",Add verified location fields during enrichment
+ALL,(all records),Prospects + Internal,,industry_category,INDUSTRY_FIELD_ABSENT,High,(no column),No industry or category column exists; the Service column describes Around29's deliverable (Website Development),Classify industry in the next step and record the source of each classification
+ALL,(all records),Internal,1,header row,INTERNAL_TAB_NO_HEADER,Medium,[merged] Internal,Internal tab has a merged title cell instead of a header row; columns were mapped by position to match the Prospects tab,Add a header row to the Internal tab or merge both tabs with a record-type column
+ALL,(all records),Prospects + Internal,,workbook,SHARING_ANYONE_CAN_EDIT,Medium,anyone with the link: writer,Workbook is editable by anyone holding the link,Restrict editing to named accounts
+ALL,(all records),Prospects + Internal,,url_std,URL_SCHEME_UNVERIFIED,Low,(none in source),url_std uses https:// as a convention; the source has no scheme and no URL was fetched in this step,Verify live URLs during enrichment
+P-01,AA Roofing and Decking,Prospects,2,email,EMAIL_MISSING,High,(blank),No email address in the source,Obtain a contact email
+P-02,Affordable Junk Removal,Prospects,3,email,EMAIL_FREEMAIL,Medium,affordablejunkremoval916@gmail.com,Free-mail address (gmail.com); ownership and role cannot be confirmed,Confirm the address belongs to the business and identify the person behind it
+P-03,Alignments Northwest LLC,Prospects,4,email,EMAIL_FREEMAIL,Medium,alignmentsnw@gmail.com,Free-mail address (gmail.com); ownership and role cannot be confirmed,Confirm the address belongs to the business and identify the person behind it
+P-03,Alignments Northwest LLC,Prospects,4,phone,POSSIBLE_RELATED_ENTITY,Low,(253) 777-7092,"Shares area code and exchange 253-777 with P-07; names and domains differ, so not treated as a duplicate",Check whether the businesses are under common ownership
+P-04,American Tree Excavation,Prospects,5,email,EMAIL_MISSING,High,(blank),No email address in the source,Obtain a contact email
+P-05,Around Cricket,Prospects,6,email,EMAIL_MISSING,High,(blank),No email address in the source,Obtain a contact email
+P-05,Around Cricket,Prospects,6,phone,PHONE_INVALID_FORMAT,High,(812) 121-2561,exchange code 121 is not valid under North American numbering (must start with 2 to 9),Confirm the correct number with the client
+P-06,ASL Camguard,Prospects,7,email,EMAIL_MISSING,High,(blank),No email address in the source,Obtain a contact email
+P-06,ASL Camguard,Prospects,7,phone,PHONE_MISSING,High,(blank),No phone number in the source,Obtain a phone number
+P-07,Axle Surgeons of Seattle,Prospects,8,email,EMAIL_FREEMAIL,Medium,mobileaxleservice@gmail.com,Free-mail address (gmail.com); ownership and role cannot be confirmed; address does not contain the business name,Confirm the address belongs to the business and identify the person behind it
+P-07,Axle Surgeons of Seattle,Prospects,8,phone,POSSIBLE_RELATED_ENTITY,Low,(253) 777-8811,"Shares area code and exchange 253-777 with P-03; names and domains differ, so not treated as a duplicate",Check whether the businesses are under common ownership
+P-08,Brothers Micro Market,Prospects,9,email,EMAIL_DOMAIN_MISMATCH,Medium,peter@brosdist.com,Email domain brosdist.com differs from the website domain brothersmicromarket.com,"Confirm whether this is the owner, a parent company or a third party"
+P-08,Brothers Micro Market,Prospects,9,contact_name,CONTACT_NAME_HINT,Low,peter@brosdist.com,First name 'Peter' appears in the email address; no surname or title in the source,Verify the person's full name and role
+P-09,Calvary Cemetery,Prospects,10,email,EMAIL_MISSING,High,(blank),No email address in the source,Obtain a contact email
+P-10,Chili On The Green,Prospects,11,email,EMAIL_MISSING,High,(blank),No email address in the source,Obtain a contact email
+P-10,Chili On The Green,Prospects,11,phone,PHONE_MISSING,High,(blank),No phone number in the source,Obtain a phone number
+P-11,Clean and Clean by Cliff,Prospects,12,email,EMAIL_MISSING,High,(blank),No email address in the source,Obtain a contact email
+P-11,Clean and Clean by Cliff,Prospects,12,business_name / website_url,NAME_DOMAIN_MISMATCH,Medium,Clean and Clean by Cliff | cleanandclearbycliff.com/,Name says 'Clean and Clean' but the domain says 'cleanandclear',Confirm the legal/trading name and the correct website
+P-12,Cunning Dental Group,Prospects,13,email,EMAIL_MISSING,High,(blank),No email address in the source,Obtain a contact email
+P-12,Cunning Dental Group,Prospects,13,record,POSSIBLE_DUPLICATE,Medium,Cunning Dental Group,shared leading name token 'cunning' while domains differ (cunningdental.com vs cunningsmiles.implant-experts.com); may be one organisation with two sites or a sub-brand (other record: P-13),Confirm whether the two records are the same business before merging
+P-13,cunningsmiles implant experts,Prospects,14,email,EMAIL_MISSING,High,(blank),No email address in the source,Obtain a contact email
+P-13,cunningsmiles implant experts,Prospects,14,phone,PHONE_MISSING,High,(blank),No phone number in the source,Obtain a phone number
+P-13,cunningsmiles implant experts,Prospects,14,record,POSSIBLE_DUPLICATE,Medium,cunningsmiles implant experts,shared leading name token 'cunning' while domains differ (cunningdental.com vs cunningsmiles.implant-experts.com); may be one organisation with two sites or a sub-brand (other record: P-12),Confirm whether the two records are the same business before merging
+P-13,cunningsmiles implant experts,Prospects,14,website_url,URL_THIRD_PARTY_SUBDOMAIN,Medium,cunningsmiles.implant-experts.com/,"Site is a subdomain of implant-experts.com, a different root domain from the business name",Verify who owns the root domain and whether this is the business's primary site
+P-13,cunningsmiles implant experts,Prospects,14,website_project_status,WEBSITE_NOT_DELIVERED,Medium,Changes in Progress,Website project is not marked Delivered in the source,Confirm the site is live before any campaign planning
+P-13,cunningsmiles implant experts,Prospects,14,business_name,NAME_CASE_STANDARDIZED,Low,cunningsmiles implant experts,All-lowercase name written as 'Cunningsmiles Implant Experts'; original kept in business_name_original,Confirm the brand's preferred capitalisation
+P-14,DBSA OK,Prospects,15,email,EMAIL_ROLE_MAILBOX,Low,office@dbsaok.org,"Generic role mailbox, not a named person",Identify the decision maker behind the mailbox
+P-15,Kiwanis Club of Tulsa,Prospects,16,email,EMAIL_MISSING,High,(blank),No email address in the source,Obtain a contact email
+P-16,La Jolla Grooming Co,Prospects,17,email,EMAIL_MISSING,High,(blank),No email address in the source,Obtain a contact email
+P-17,Lab Rescue,Prospects,18,email,EMAIL_MISSING,High,(blank),No email address in the source,Obtain a contact email
+P-17,Lab Rescue,Prospects,18,phone,PHONE_MISSING,High,(blank),No phone number in the source,Obtain a phone number
+P-18,Next Level Prospect,Prospects,19,email,EMAIL_MISSING,High,(blank),No email address in the source,Obtain a contact email
+P-18,Next Level Prospect,Prospects,19,website_project_status,WEBSITE_NOT_DELIVERED,Medium,Changes in Progress,Website project is not marked Delivered in the source,Confirm the site is live before any campaign planning
+P-19,NorthWest Eco Clean,Prospects,20,email,EMAIL_MISSING,High,(blank),No email address in the source,Obtain a contact email
+P-20,Occasions Paper,Prospects,21,email,EMAIL_MISSING,High,(blank),No email address in the source,Obtain a contact email
+P-21,Ocean View Lodging,Prospects,22,email,EMAIL_MISSING,High,(blank),No email address in the source,Obtain a contact email
+P-22,Orion Opticals,Prospects,23,email,EMAIL_DOMAIN_MISMATCH,Medium,james@premomediagroup.com,Email domain premomediagroup.com differs from the website domain orionoptical.com,"Confirm whether this is the owner, a parent company or a third party"
+P-22,Orion Opticals,Prospects,23,contact_name,CONTACT_NAME_HINT,Low,james@premomediagroup.com,First name 'James' appears in the email address; no surname or title in the source,Verify the person's full name and role
+P-22,Orion Opticals,Prospects,23,business_name / website_url,NAME_DOMAIN_MISMATCH,Low,Orion Opticals | orionoptical.com,"Name is plural 'Opticals', domain is singular 'orionoptical'",Confirm the legal/trading name and the correct website
+P-23,Ornamental Grasses,Prospects,24,email,EMAIL_MISSING,High,(blank),No email address in the source,Obtain a contact email
+P-24,Pinpoint Resource,Prospects,25,email,EMAIL_MISSING,High,(blank),No email address in the source,Obtain a contact email
+P-25,Prime Care Dental Indy,Prospects,26,email,EMAIL_MISSING,High,(blank),No email address in the source,Obtain a contact email
+P-26,Rosewood Parke,Prospects,27,email,EMAIL_MISSING,High,(blank),No email address in the source,Obtain a contact email
+P-26,Rosewood Parke,Prospects,27,phone,PHONE_MISSING,High,(blank),No phone number in the source,Obtain a phone number
+P-27,Superior Coatings NW,Prospects,28,email,EMAIL_MISSING,High,(blank),No email address in the source,Obtain a contact email
+P-28,Tag OK,Prospects,29,email,EMAIL_MISSING,High,(blank),No email address in the source,Obtain a contact email
+P-28,Tag OK,Prospects,29,phone,PHONE_MISSING,High,(blank),No phone number in the source,Obtain a phone number
+P-29,The Bartan Company,Prospects,30,email,EMAIL_MISSING,High,(blank),No email address in the source,Obtain a contact email
+P-30,Top Dollar Pawn and Check Cashing,Prospects,31,email,EMAIL_MISSING,High,(blank),No email address in the source,Obtain a contact email
+P-31,Trans Landscaping,Prospects,32,email,EMAIL_MISSING,High,(blank),No email address in the source,Obtain a contact email
+P-32,VIP Pest Solutions,Prospects,33,email,EMAIL_MISSING,High,(blank),No email address in the source,Obtain a contact email
+P-32,VIP Pest Solutions,Prospects,33,phone,PHONE_INVALID_FORMAT,High,80560833847,"11 digits, does not match a 10-digit North American number (with or without country code 1)",Confirm the correct number with the client
+P-33,Wheeler Sonoma Printing,Prospects,34,email,EMAIL_MISSING,High,(blank),No email address in the source,Obtain a contact email
+P-34,Will Rogers Stage Foundation,Prospects,35,email,EMAIL_MISSING,High,(blank),No email address in the source,Obtain a contact email
+P-34,Will Rogers Stage Foundation,Prospects,35,phone,PHONE_MISSING,High,(blank),No phone number in the source,Obtain a phone number
+P-35,Workhub Tulsa,Prospects,36,email,EMAIL_MISSING,High,(blank),No email address in the source,Obtain a contact email
+P-36,Zellersins,Prospects,37,email,EMAIL_MISSING,High,(blank),No email address in the source,Obtain a contact email
+P-36,Zellersins,Prospects,37,business_name / website_url,NAME_DOMAIN_MISMATCH,Medium,Zellersins | zellersgroup.com/,Name 'Zellersins' does not match domain 'zellersgroup',Confirm the legal/trading name and the correct website
+P-36,Zellersins,Prospects,37,business_name,NAME_LOOKS_LIKE_HANDLE,Low,Zellersins,Name reads like a domain or account handle rather than a trading name,Confirm the trading name
+I-01,Around29 Center for Enriched Studies,Internal,2,email,EMAIL_MISSING,High,(blank),No email address in the source,Obtain a contact email
+I-01,Around29 Center for Enriched Studies,Internal,2,phone,PHONE_STORED_AS_NUMBER,High,9.16E+11 (stored value 916306000000),12-digit value stored as a number and displayed as 9.16E+11; not a 10-digit North American number; trailing zeros suggest digits were lost when the cell was stored as a number,Re-enter the phone as text in the correct format after confirming the number
+I-01,Around29 Center for Enriched Studies,Internal,2,record,INTERNAL_TAB_RECORD,Medium,Around29 Center for Enriched Studies,Record comes from the Internal tab (no header row); names suggest Around29-owned properties,Confirm whether this record is a prospect at all
+I-02,Around29 Digital Media Solutions,Internal,3,email,EMAIL_MISSING,High,(blank),No email address in the source,Obtain a contact email
+I-02,Around29 Digital Media Solutions,Internal,3,record,INTERNAL_TAB_RECORD,Medium,Around29 Digital Media Solutions,Record comes from the Internal tab (no header row); names suggest Around29-owned properties,Confirm whether this record is a prospect at all
+I-02,Around29 Digital Media Solutions,Internal,3,website_project_status,WEBSITE_NOT_DELIVERED,Medium,Build in Progress,Website project is not marked Delivered in the source,Confirm the site is live before any campaign planning
+I-03,Search29,Internal,4,email,EMAIL_MISSING,High,(blank),No email address in the source,Obtain a contact email
+I-03,Search29,Internal,4,phone,PHONE_MISSING,High,(blank),No phone number in the source,Obtain a phone number
+I-03,Search29,Internal,4,website_url,URL_MISSING,High,(blank),No website URL in the source,Obtain the website address or mark the record as having no site
+I-03,Search29,Internal,4,record,INTERNAL_TAB_RECORD,Medium,Search29,Record comes from the Internal tab (no header row); names suggest Around29-owned properties,Confirm whether this record is a prospect at all
+I-04,Send29,Internal,5,email,EMAIL_MISSING,High,(blank),No email address in the source,Obtain a contact email
+I-04,Send29,Internal,5,phone,PHONE_MISSING,High,(blank),No phone number in the source,Obtain a phone number
+I-04,Send29,Internal,5,record,INTERNAL_TAB_RECORD,Medium,Send29,Record comes from the Internal tab (no header row); names suggest Around29-owned properties,Confirm whether this record is a prospect at all
+I-04,Send29,Internal,5,website_project_status,WEBSITE_NOT_DELIVERED,Medium,Build in Progress,Website project is not marked Delivered in the source,Confirm the site is live before any campaign planning
+I-05,Lead You,Internal,6,email,EMAIL_MISSING,High,(blank),No email address in the source,Obtain a contact email
+I-05,Lead You,Internal,6,phone,PHONE_MISSING,High,(blank),No phone number in the source,Obtain a phone number
+I-05,Lead You,Internal,6,record,INTERNAL_TAB_RECORD,Medium,Lead You,Record comes from the Internal tab (no header row); names suggest Around29-owned properties,Confirm whether this record is a prospect at all
+I-06,Around29 themes,Internal,7,email,EMAIL_MISSING,High,(blank),No email address in the source,Obtain a contact email
+I-06,Around29 themes,Internal,7,phone,PHONE_MISSING,High,(blank),No phone number in the source,Obtain a phone number
+I-06,Around29 themes,Internal,7,record,INTERNAL_TAB_RECORD,Medium,Around29 themes,Record comes from the Internal tab (no header row); names suggest Around29-owned properties,Confirm whether this record is a prospect at all
+I-06,Around29 themes,Internal,7,business_name / website_url,NAME_DOMAIN_MISMATCH,Low,Around29 themes | studio29themes.com/,Name 'Around29 themes' vs domain 'studio29themes',Confirm the legal/trading name and the correct website
+I-07,Around29.us,Internal,8,email,EMAIL_MISSING,High,(blank),No email address in the source,Obtain a contact email
+I-07,Around29.us,Internal,8,phone,PHONE_MISSING,High,(blank),No phone number in the source,Obtain a phone number
+I-07,Around29.us,Internal,8,record,INTERNAL_TAB_RECORD,Medium,Around29.us,Record comes from the Internal tab (no header row); names suggest Around29-owned properties,Confirm whether this record is a prospect at all
+I-07,Around29.us,Internal,8,business_name,NAME_LOOKS_LIKE_HANDLE,Low,Around29.us,Name reads like a domain or account handle rather than a trading name,Confirm the trading name
+I-08,Starling Education,Internal,9,email,EMAIL_MISSING,High,(blank),No email address in the source,Obtain a contact email
+I-08,Starling Education,Internal,9,record,INTERNAL_TAB_RECORD,Medium,Starling Education,Record comes from the Internal tab (no header row); names suggest Around29-owned properties,Confirm whether this record is a prospect at all
+I-08,Starling Education,Internal,9,record,POSSIBLE_DUPLICATE,Medium,Starling Education,shared leading name token 'starling' while domains differ (starling.education vs starlingwonderkids.com); may be one organisation with two sites or a sub-brand (other record: I-09),Confirm whether the two records are the same business before merging
+I-08,Starling Education,Internal,9,phone,PHONE_UNFORMATTED_IN_SOURCE,Low,6305992630,Stored as 10 bare digits; formatted in the cleaned data,None
+I-09,Starling Wonder Kids,Internal,10,email,EMAIL_MISSING,High,(blank),No email address in the source,Obtain a contact email
+I-09,Starling Wonder Kids,Internal,10,phone,PHONE_STORED_AS_NUMBER,High,9.19E+11 (stored value 918640000000),12-digit value stored as a number and displayed as 9.19E+11; not a 10-digit North American number; trailing zeros suggest digits were lost when the cell was stored as a number,Re-enter the phone as text in the correct format after confirming the number
+I-09,Starling Wonder Kids,Internal,10,record,INTERNAL_TAB_RECORD,Medium,Starling Wonder Kids,Record comes from the Internal tab (no header row); names suggest Around29-owned properties,Confirm whether this record is a prospect at all
+I-09,Starling Wonder Kids,Internal,10,record,POSSIBLE_DUPLICATE,Medium,Starling Wonder Kids,shared leading name token 'starling' while domains differ (starling.education vs starlingwonderkids.com); may be one organisation with two sites or a sub-brand (other record: I-08),Confirm whether the two records are the same business before merging
